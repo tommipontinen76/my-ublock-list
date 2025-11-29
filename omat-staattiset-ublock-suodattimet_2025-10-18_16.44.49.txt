@@ -2500,8 +2500,13 @@ youtube.com###video-title.ytd-rich-grid-media:style(font-size: 1.4rem !important
 youtube.com###metadata-line.ytd-video-meta-block:style(font-size: 1.2rem !important; line-height: 1.8rem !important;)
 youtube.com###video-title.ytd-rich-grid-slim-media:style(font-size: 1.4rem !important; line-height: 2rem !important;)
 
-! YT - Sidebar - Hide Members Only Videos
-www.youtube.com###related :is(yt-lockup-view-model, ytd-compact-video-renderer):has([d^="M6 .5a5.5 5.5 0 100 11"])
+ ! Hide YouTube “Members only” videos and badges
+www.youtube.com##ytd-badge-supported-renderer:has-text(Members only)
+www.youtube.com##ytd-thumbnail-overlay-time-status-renderer:has-text(Members)
+www.youtube.com##ytd-video-renderer:has(ytd-badge-supported-renderer:has-text(Members))
+www.youtube.com##ytd-grid-video-renderer:has(ytd-badge-supported-renderer:has-text(Members))
+www.youtube.com##ytd-rich-item-renderer:has(ytd-badge-supported-renderer:has-text(Members))
+www.youtube.com##ytd-rich-grid-media:has(ytd-badge-supported-renderer:has-text(Members))
 
 ! YT - Sidebar - Hide Movies (free with ads)
 youtube.com###items > ytd-item-section-renderer > #contents > ytd-compact-movie-renderer
