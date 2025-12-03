@@ -2507,6 +2507,7 @@ www.youtube.com##ytd-video-renderer:has(ytd-badge-supported-renderer:has-text(Me
 www.youtube.com##ytd-grid-video-renderer:has(ytd-badge-supported-renderer:has-text(Members))
 www.youtube.com##ytd-rich-item-renderer:has(ytd-badge-supported-renderer:has-text(Members))
 www.youtube.com##ytd-rich-grid-media:has(ytd-badge-supported-renderer:has-text(Members))
+www.youtube.com##ytd-rich-item-renderer.ytd-rich-grid-renderer:has(.badge-style-type-members-only)
 
 ! YT - Sidebar - Hide Movies (free with ads)
 youtube.com###items > ytd-item-section-renderer > #contents > ytd-compact-movie-renderer
